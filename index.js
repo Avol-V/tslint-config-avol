@@ -106,13 +106,6 @@ const commonRules = {
 	},
 	'typeof-compare': true,
 	'use-isnan': true,
-	'variable-name': {
-		options: [
-			'allow-leading-underscore',
-			'ban-keywords',
-			'check-format',
-		],
-	},
 	'whitespace': {
 		options: [
 			'check-branch',
@@ -136,6 +129,14 @@ const jsRules = {
 			},
 			singleline: 'never',
 		},
+	},
+	'variable-name': {
+		options: [
+			'allow-leading-underscore',
+			'ban-keywords',
+			'check-format',
+			'allow-pascal-case',
+		],
 	},
 };
 const tsRules = {
@@ -224,6 +225,13 @@ const tsRules = {
 		],
 	},
 	'unified-signatures': true,
+	'variable-name': {
+		options: [
+			'allow-leading-underscore',
+			'ban-keywords',
+			'check-format',
+		],
+	},
 };
 const tsRulesType = {
 	
