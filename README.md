@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-npm install --save-dev tslint-config-m18
+npm install --save-dev tslint tslint-config-m18
 ```
 
 ## Usage
@@ -16,6 +16,20 @@ In `tslint.json`:
 {
 	"extends": "tslint-config-m18"
 }
+```
+
+To use with type-check rules, in `tslint-type-check.json`:
+
+```json
+{
+	"extends": ["tslint-config-m18", "tslint-config-m18/typeCheck"]
+}
+```
+
+And run with:
+
+```
+tslint -c tslint-type-check.json -p \"scripts/tsconfig.json\" --type-check \"scripts/**/*.{ts,tsx}\"
 ```
 
 ## Rules

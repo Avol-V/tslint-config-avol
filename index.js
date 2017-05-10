@@ -242,12 +242,9 @@ const tsRules = {
 		],
 	},
 };
-const tsRulesType = {
-	
-};
 
 module.exports = {
-	rules: Object.assign( {}, commonRules, tsRules, tsRulesType ),
+	rules: Object.assign( {}, commonRules, tsRules ),
 	jsRules: Object.assign( {}, commonRules, jsRules ),
 	defaultSeverity: 'warning',
 };
