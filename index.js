@@ -29,7 +29,16 @@ const commonRules = {
 	'newline-before-return': true,
 	'no-arg': true,
 	'no-consecutive-blank-lines': true,
-	'no-console': true,
+	'no-console': {
+		options: [
+			'debug',
+			'info',
+			'log',
+			'time',
+			'timeEnd',
+			'trace',
+		],
+	},
 	'no-construct': true,
 	'no-debugger': true,
 	'no-duplicate-super': true,
