@@ -101,12 +101,6 @@ const commonRules = {
 			named: 'never',
 		},
 	},
-	'trailing-comma': {
-		options: {
-			multiline: 'always',
-			singleline: 'never',
-		},
-	},
 	'triple-equals': {
 		options: ['allow-null-check'],
 	},
@@ -133,6 +127,16 @@ const commonRules = {
 };
 const jsRules = {
 	'no-duplicate-variable': true,
+	'trailing-comma': {
+		options: {
+			multiline: {
+				objects: 'always',
+				arrays: 'always',
+				functions: 'never',
+			},
+			singleline: 'never',
+		},
+	},
 };
 const tsRules = {
 	'adjacent-overload-signatures': true,
@@ -187,6 +191,12 @@ const tsRules = {
 	'no-reference-import': true,
 	'no-var-requires': true,
 	'prefer-method-signature': true,
+	'trailing-comma': {
+		options: {
+			multiline: 'always',
+			singleline: 'never',
+		},
+	},
 	'typedef': {
 		options: [
 			'call-signature',
