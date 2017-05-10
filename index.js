@@ -1,5 +1,4 @@
 const commonRules = {
-	'adjacent-overload-signatures': true,
 	'arrow-parens': true,
 	'arrow-return-shorthand': true,
 	'class-name': true,
@@ -136,6 +135,7 @@ const jsRules = {
 	'no-duplicate-variable': true,
 };
 const tsRules = {
+	'adjacent-overload-signatures': true,
 	'array-type': {
 		options: ['array-simple'],
 	},
