@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/m18ru/tslint-config-m18/issues"
   },
-  "homepage": "https://github.com/m18ru/tslint-config-m18#readme"
+  "homepage": "https://github.com/m18ru/tslint-config-m18#readme",
+  "peerDependencies": {
+    "tslint": "^5.2.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2"
+  }
 }
