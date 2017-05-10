@@ -1,0 +1,26 @@
+{
+  "name": "tslint-config-m18",
+  "version": "1.0.0",
+  "description": "M18 config for TSLint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m18ru/tslint-config-m18.git"
+  },
+  "keywords": [
+    "tslint",
+    "config",
+    "typescript",
+    "ts",
+    "m18"
+  ],
+  "author": "Andrey Avol Volynkin <code@m18.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m18ru/tslint-config-m18/issues"
+  },
+  "homepage": "https://github.com/m18ru/tslint-config-m18#readme"
+}
