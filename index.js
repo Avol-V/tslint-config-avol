@@ -211,7 +211,6 @@ const tsRules = {
 		options: [
 			'call-signature',
 			'parameter',
-			'arrow-parameter',
 			'property-declaration',
 		],
 	},
