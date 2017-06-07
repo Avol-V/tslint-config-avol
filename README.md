@@ -1,3 +1,7 @@
+[![NPM][npm]][npm-url]
+[![Dependencies][deps]][deps-url]
+[![DevDependencies][deps-dev]][deps-dev-url]
+
 # tslint-config-m18
 
 [M18](https://github.com/m18ru) config for [TSLint](https://github.com/palantir/tslint).
@@ -35,3 +39,16 @@ tslint -c tslint-type-check.json -p \"scripts/tsconfig.json\" --type-check \"scr
 ## Rules
 
 [TSLint](https://palantir.github.io/tslint/rules/)
+
+## License
+
+[MIT](LICENSE).
+
+[npm]: https://img.shields.io/npm/v/tslint-config-m18.svg
+[npm-url]: https://npmjs.com/package/tslint-config-m18
+
+[deps]: https://img.shields.io/david/m18ru/tslint-config-m18.svg
+[deps-url]: https://david-dm.org/m18ru/tslint-config-m18
+
+[deps-dev]: https://img.shields.io/david/dev/m18ru/tslint-config-m18.svg
+[deps-dev-url]: https://david-dm.org/m18ru/tslint-config-m18?type=dev
