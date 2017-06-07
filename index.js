@@ -1,6 +1,7 @@
 const commonRules = {
 	'arrow-parens': true,
 	'arrow-return-shorthand': true,
+	'binary-expression-operand-order': true,
 	'class-name': true,
 	'comment-format': {
 		options: ['check-space'],
