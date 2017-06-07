@@ -52,6 +52,10 @@ Example scripts for `package.json`:
 
 [TSLint](https://palantir.github.io/tslint/rules/)
 
+## Change Log
+
+[View changelog](CHANGELOG.md).
+
 ## License
 
 [MIT](LICENSE).
