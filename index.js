@@ -111,6 +111,9 @@ const commonRules = {
 			named: 'never',
 		},
 	},
+	'switch-final-break': {
+		options: ['always'],
+	},
 	'triple-equals': {
 		options: ['allow-null-check'],
 	},
