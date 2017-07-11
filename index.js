@@ -51,6 +51,7 @@ const commonRules = {
 	'no-sparse-arrays': true,
 	'no-string-literal': true,
 	'no-string-throw': true,
+	'no-this-assignment': true,
 	'no-unnecessary-callback-wrapper': true,
 	'no-unnecessary-initializer': true,
 	'no-unsafe-finally': true,
