@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/m18ru/tslint-config-m18#readme",
   "peerDependencies": {
-    "tslint": "^5.4.3"
+    "tslint": "^5.5.0"
   },
   "devDependencies": {
-    "tslint": "^5.4.3",
+    "tslint": "^5.5.0",
     "typescript": "^2.3.4"
   }
 }
