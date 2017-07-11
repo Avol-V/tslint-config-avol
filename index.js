@@ -123,7 +123,6 @@ const commonRules = {
 		options: [
 			'check-branch',
 			'check-decl',
-			'check-module',
 			'check-operator',
 			'check-separator',
 			'check-type',
