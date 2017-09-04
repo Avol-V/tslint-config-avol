@@ -83,7 +83,6 @@ const commonRules = {
 			'named-imports-order': 'case-insensitive',
 		},
 	},
-	'prefer-conditional-expression': true,
 	'prefer-const': true,
 	'prefer-for-of': true,
 	'prefer-function-over-method': {
