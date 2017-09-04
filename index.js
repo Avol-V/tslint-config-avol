@@ -49,7 +49,12 @@ const commonRules = {
 	'no-invalid-template-strings': true,
 	'no-parameter-reassignment': true,
 	'no-reference': true,
-	'no-shadowed-variable': true,
+	'no-shadowed-variable': {
+		options: {
+			class: false,
+			function: false,
+		},
+	},
 	'no-sparse-arrays': true,
 	'no-string-literal': true,
 	'no-string-throw': true,
