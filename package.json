@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-m18",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "M18 config for TSLint",
   "main": "index.js",
   "scripts": {
