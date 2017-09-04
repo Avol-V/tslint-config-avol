@@ -177,16 +177,6 @@ const tsRules = {
 		],
 	},
 	'callable-types': true,
-	'completed-docs': {
-		options: [
-			'classes',
-			'enums',
-			'functions',
-			'interfaces',
-			'methods',
-			'properties',
-		],
-	},
 	'curly': true,
 	'interface-over-type-literal': true,
 	'member-access': {
