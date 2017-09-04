@@ -47,6 +47,7 @@ const commonRules = {
 	'no-empty': true,
 	'no-eval': true,
 	'no-invalid-template-strings': true,
+	'no-parameter-reassignment': true,
 	'no-reference': true,
 	'no-shadowed-variable': true,
 	'no-sparse-arrays': true,
