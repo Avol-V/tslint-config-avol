@@ -131,6 +131,7 @@ const commonRules = {
 			'check-separator',
 			'check-type',
 			'check-typecast',
+			'check-type-operator',
 		],
 	},
 };
