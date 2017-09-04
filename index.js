@@ -42,6 +42,7 @@ const commonRules = {
 	},
 	'no-construct': true,
 	'no-debugger': true,
+	'no-duplicate-imports': true,
 	'no-duplicate-super': true,
 	'no-empty': true,
 	'no-eval': true,
