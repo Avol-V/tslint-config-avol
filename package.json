@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-avol",
-  "version": "1.6.2",
+  "version": "2.0.0",
   "description": "Avol’s config for TSLint",
   "main": "index.js",
   "scripts": {
