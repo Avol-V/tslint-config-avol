@@ -1,7 +1,7 @@
 {
-  "name": "tslint-config-m18",
+  "name": "tslint-config-avol",
   "version": "1.6.2",
-  "description": "M18 config for TSLint",
+  "description": "Avol’s config for TSLint",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,21 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m18ru/tslint-config-m18.git"
+    "url": "git+https://github.com/Avol-V/tslint-config-avol.git"
   },
   "keywords": [
     "tslint",
     "config",
     "typescript",
     "ts",
-    "m18"
+    "avol"
   ],
-  "author": "Andrey Avol Volynkin <code@m18.ru>",
+  "author": "Andrey Avol Volynkin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/m18ru/tslint-config-m18/issues"
+    "url": "https://github.com/Avol-V/tslint-config-avol/issues"
   },
-  "homepage": "https://github.com/m18ru/tslint-config-m18#readme",
+  "homepage": "https://github.com/Avol-V/tslint-config-avol#readme",
   "peerDependencies": {
     "tslint": "^5.7.0"
   },

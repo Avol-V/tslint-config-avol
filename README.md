@@ -2,14 +2,14 @@
 [![Dependencies][deps]][deps-url]
 [![DevDependencies][deps-dev]][deps-dev-url]
 
-# tslint-config-m18
+# tslint-config-avol
 
-[M18](https://github.com/m18ru) config for [TSLint](https://github.com/palantir/tslint).
+[Avol’s](https://github.com/Avol-V) config for [TSLint](https://github.com/palantir/tslint).
 
 ## Installation
 
 ```
-npm install --save-dev tslint tslint-config-m18
+npm install --save-dev tslint tslint-config-avol
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ In `tslint.json`:
 
 ```json
 {
-	"extends": "tslint-config-m18"
+	"extends": "tslint-config-avol"
 }
 ```
 
@@ -26,7 +26,7 @@ To use with type-check rules, in `tslint-type-check.json`:
 
 ```json
 {
-	"extends": ["tslint-config-m18", "tslint-config-m18/typeCheck"]
+	"extends": ["tslint-config-avol", "tslint-config-avol/typeCheck"]
 }
 ```
 
@@ -60,11 +60,11 @@ Example scripts for `package.json`:
 
 [MIT](LICENSE).
 
-[npm]: https://img.shields.io/npm/v/tslint-config-m18.svg
-[npm-url]: https://npmjs.com/package/tslint-config-m18
+[npm]: https://img.shields.io/npm/v/tslint-config-avol.svg
+[npm-url]: https://npmjs.com/package/tslint-config-avol
 
-[deps]: https://img.shields.io/david/m18ru/tslint-config-m18.svg
-[deps-url]: https://david-dm.org/m18ru/tslint-config-m18
+[deps]: https://img.shields.io/david/Avol-V/tslint-config-avol.svg
+[deps-url]: https://david-dm.org/Avol-V/tslint-config-avol
 
-[deps-dev]: https://img.shields.io/david/dev/m18ru/tslint-config-m18.svg
-[deps-dev-url]: https://david-dm.org/m18ru/tslint-config-m18?type=dev
+[deps-dev]: https://img.shields.io/david/dev/Avol-V/tslint-config-avol.svg
+[deps-dev-url]: https://david-dm.org/Avol-V/tslint-config-avol?type=dev
