@@ -22,18 +22,18 @@ In `tslint.json`:
 }
 ```
 
-To use with type-check rules, in `tslint-type-check.json`:
+To use with type-check rules, in `tslint-project.json`:
 
 ```json
 {
-	"extends": ["tslint-config-avol", "tslint-config-avol/typeCheck"]
+	"extends": ["tslint-config-avol", "tslint-config-avol/project"]
 }
 ```
 
 And run with:
 
 ```
-tslint -c tslint-type-check.json -p \"scripts/tsconfig.json\" --type-check
+tslint -c tslint-project.json -p \"scripts/tsconfig.json\" --type-check
 ```
 
 Example scripts for `package.json`:
@@ -41,7 +41,7 @@ Example scripts for `package.json`:
 ```json
 {
   "scripts": {
-    "lint:scripts-project": "tslint -c tslint-type-check.json -p tsconfig.json --type-check",
+    "lint:scripts-project": "tslint -c tslint-project.json -p tsconfig.json --type-check",
     "lint:scripts-other": "tslint \"{*.js,src/*.d.ts,test/*.{ts,tsx}}\"",
     "lint": "npm run lint:scripts-project && npm run lint:scripts-other"
   }
