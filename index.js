@@ -1,6 +1,7 @@
 const commonRules = {
 	'arrow-parens': true,
 	'arrow-return-shorthand': true,
+	'ban-comma-operator': true,
 	'binary-expression-operand-order': true,
 	'class-name': true,
 	'comment-format': {
@@ -44,11 +45,13 @@ const commonRules = {
 	'no-debugger': true,
 	'no-duplicate-imports': true,
 	'no-duplicate-super': true,
+	'no-duplicate-switch-case': true,
 	'no-empty': true,
 	'no-eval': true,
 	'no-invalid-template-strings': true,
 	'no-parameter-reassignment': true,
 	'no-reference': true,
+	'no-return-await': true,
 	'no-shadowed-variable': {
 		options: {
 			class: false,
