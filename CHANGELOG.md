@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0] - 2018-01-03
+
+### Added
+
+- `ban-comma-operator` rule.
+- `no-duplicate-switch-case` rule.
+- `no-return-await` rule.
+- `no-trailing-whitespace` rule with allowing blank lines, comments and template strings.
+- `check-multiline-start` option to `jsdoc-format` rule.
+- `esSpecCompliant` option to `trailing-comma` rule.
+- `exclude-class-expressions` option to `max-classes-per-file` rule.
+
+### Changed
+
+- `tslint` updated to version 5.8.0.
+- `curly` rule now in common options (for js and ts) with addition `ignore-same-line` option.
+
+### Removed
+
+- `typeof-compare` rule is deprecated because typescript already does that check.
+- `--type-check` CLI option is deprecated and no longer necessary (it’s only need `--project` now to enable typed rules).
+
 ## [2.0.0] - 2017-12-07
 
 ### Changed
@@ -60,5 +82,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
-- `tslint` shoult be in peer and dev dependencies.
+- `tslint` should be in peer and dev dependencies.
 - `adjacent-overload-signatures` rule is ts-only.
