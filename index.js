@@ -16,7 +16,9 @@ const commonRules = {
 	'indent': {
 		options: ['tabs'],
 	},
-	'jsdoc-format': true,
+	'jsdoc-format': {
+		options: ['check-multiline-start'],
+	},
 	'label-position': true,
 	'linebreak-style': {
 		options: ['LF'],
