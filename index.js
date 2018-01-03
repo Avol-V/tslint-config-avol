@@ -125,7 +125,6 @@ const commonRules = {
 	'triple-equals': {
 		options: ['allow-null-check'],
 	},
-	'typeof-compare': true,
 	'use-isnan': true,
 	'whitespace': {
 		options: [
