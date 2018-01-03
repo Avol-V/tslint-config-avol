@@ -24,7 +24,7 @@ const commonRules = {
 		options: ['LF'],
 	},
 	'max-classes-per-file': {
-		options: [1],
+		options: [1, 'exclude-class-expressions'],
 	},
 	'max-line-length': {
 		options: [120],
