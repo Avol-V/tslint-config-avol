@@ -7,6 +7,9 @@ const commonRules = {
 	'comment-format': {
 		options: ['check-space'],
 	},
+	'curly': {
+		options: ['ignore-same-line'],
+	},
 	'eofline': true,
 	'forin': true,
 	'import-spacing': true,
@@ -178,7 +181,6 @@ const tsRules = {
 		],
 	},
 	'callable-types': true,
-	'curly': true,
 	'interface-over-type-literal': true,
 	'member-access': {
 		options: [
