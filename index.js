@@ -67,6 +67,13 @@ const commonRules = {
 	'no-string-literal': true,
 	'no-string-throw': true,
 	'no-this-assignment': true,
+	'no-trailing-whitespace': {
+		options: [
+			'ignore-blank-lines',
+			'ignore-template-strings',
+			'ignore-comments',
+		],
+	},
 	'no-unnecessary-callback-wrapper': true,
 	'no-unnecessary-initializer': true,
 	'no-unsafe-finally': true,
