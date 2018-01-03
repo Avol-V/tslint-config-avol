@@ -223,6 +223,7 @@ const tsRules = {
 		options: {
 			multiline: 'always',
 			singleline: 'never',
+			esSpecCompliant: true,
 		},
 	},
 	'typedef': {
