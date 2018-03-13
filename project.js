@@ -14,6 +14,7 @@ const tsRules = {
 	'no-boolean-literal-compare': true,
 	'no-for-in-array': true,
 	'no-unnecessary-type-assertion': true,
+	'prefer-readonly': true,
 };
 
 module.exports = {

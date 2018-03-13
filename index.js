@@ -51,6 +51,7 @@ const commonRules = {
 	'no-duplicate-imports': true,
 	'no-duplicate-super': true,
 	'no-duplicate-switch-case': true,
+	'no-dynamic-delete': true,
 	'no-empty': true,
 	'no-eval': true,
 	'no-invalid-template-strings': true,
@@ -61,6 +62,7 @@ const commonRules = {
 		options: {
 			class: false,
 			function: false,
+			temporalDeadZone: false,
 		},
 	},
 	'no-sparse-arrays': true,
