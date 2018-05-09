@@ -116,6 +116,7 @@ const commonRules = {
 	'prefer-template': {
 		options: ['allow-single-concat'],
 	},
+	'prefer-while': true,
 	'quotemark': {
 		options: [
 			'single',
