@@ -50,7 +50,8 @@ Example scripts for `package.json`:
 
 ## Rules
 
-[TSLint](https://palantir.github.io/tslint/rules/)
+* [TSLint](https://palantir.github.io/tslint/rules/)
+* [ESLint rules for TSLint](https://github.com/buzinas/tslint-eslint-rules)
 
 ## Change Log
 

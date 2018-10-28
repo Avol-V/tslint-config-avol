@@ -1,8 +1,23 @@
 const commonRules = {
+	'array-bracket-spacing': {
+		options: [
+			'never',
+			{
+				objectsInArrays: true,
+				arraysInArrays: true,
+			},
+		],
+	},
 	'arrow-parens': true,
 	'arrow-return-shorthand': true,
 	'ban-comma-operator': true,
 	'binary-expression-operand-order': true,
+	'block-spacing': {
+		options: ['always'],
+	},
+	'brace-style': {
+		options: ['allman'],
+	},
 	'class-name': true,
 	'comment-format': {
 		options: ['check-space'],
@@ -26,15 +41,16 @@ const commonRules = {
 	'max-classes-per-file': {
 		options: [1, 'exclude-class-expressions'],
 	},
-	'max-line-length': {
-		options: [120],
-	},
+	// 'max-line-length': {
+	// 	options: [120],
+	// },
 	'max-file-line-count': {
 		options: [1000],
 	},
 	'new-parens': true,
 	'newline-before-return': true,
 	'no-arg': true,
+	'no-conditional-assignment': true,
 	'no-consecutive-blank-lines': true,
 	'no-console': {
 		options: [
@@ -46,6 +62,7 @@ const commonRules = {
 			'trace',
 		],
 	},
+	'no-constant-condition': true,
 	'no-construct': true,
 	'no-debugger': true,
 	'no-duplicate-imports': true,
@@ -53,8 +70,21 @@ const commonRules = {
 	'no-duplicate-switch-case': true,
 	'no-dynamic-delete': true,
 	'no-empty': true,
+	'no-empty-character-class': true,
 	'no-eval': true,
+	'no-ex-assign': true,
+	'no-extra-boolean-cast': true,
+	'no-inner-declarations': true,
 	'no-invalid-template-strings': true,
+	'no-multi-spaces': {
+		options: {
+			exceptions: {
+				BinaryExpression: false,
+				PropertyAssignment: false,
+				VariableDeclaration: false,
+			},
+		},
+	},
 	'no-parameter-reassignment': true,
 	'no-reference': true,
 	'no-return-await': true,
@@ -68,6 +98,7 @@ const commonRules = {
 	'no-sparse-arrays': true,
 	'no-string-literal': true,
 	'no-string-throw': true,
+	'no-switch-case-fall-through': true,
 	'no-this-assignment': true,
 	'no-trailing-whitespace': {
 		options: [
@@ -79,8 +110,18 @@ const commonRules = {
 	'no-unnecessary-callback-wrapper': true,
 	'no-unnecessary-initializer': true,
 	'no-unsafe-finally': true,
+	'no-unused-expression': {
+		options: [
+			'allow-fast-null-checks',
+			'allow-new',
+			'allow-tagged-template',
+		],
+	},
 	'no-var-keyword': true,
 	'number-literal-format': true,
+	'object-curly-spacing': {
+		options: ['always'],
+	},
 	'object-literal-key-quotes': {
 		options: ['consistent-as-needed'],
 	},
@@ -137,22 +178,91 @@ const commonRules = {
 			named: 'never',
 		},
 	},
+	'space-in-parens': {
+		options: [
+			'always',
+			{
+				exceptions: ['empty'],
+			},
+		],
+	},
+	'switch-default': true,
 	'switch-final-break': {
 		options: ['always'],
+	},
+	'ter-computed-property-spacing': {
+		options: ['never'],
+	},
+	'ter-func-call-spacing': {
+		options: ['never'],
+	},
+	'ter-indent': {
+		options: [
+			'tab',
+			{
+				SwitchCase: 1,
+				VariableDeclarator: 1,
+				outerIIFEBody: 1,
+				MemberExpression: 1,
+				FunctionDeclaration: {
+					body: 1,
+					parameters: 1,
+				},
+				FunctionExpression: {
+					body: 1,
+					parameters: 1,
+				},
+				CallExpression: {
+					arguments: 1,
+				},
+			},
+		],
+	},
+	'ter-max-len': {
+		options: {
+			code: 120,
+			tabWidth: 4,
+		},
+	},
+	'ter-newline-after-var': {
+		options: ['always'],
+	},
+	'ter-no-irregular-whitespace': {
+		options: {
+			skipStrings: true,
+			skipComments: true,
+			skipRegExps: true,
+			skipTemplates: true,
+		},
+	},
+	'ter-no-self-compare': true,
+	'ter-padded-blocks': {
+		options: ['never'],
 	},
 	'triple-equals': {
 		options: ['allow-null-check'],
 	},
 	'use-isnan': true,
+	'variable-name': {
+		options: [
+			'allow-leading-underscore',
+			'ban-keywords',
+			'check-format',
+			'allow-pascal-case',
+		],
+	},
 	'whitespace': {
 		options: [
 			'check-branch',
 			'check-decl',
 			'check-operator',
+			'check-module',
 			'check-separator',
+			'check-rest-spread',
 			'check-type',
 			'check-typecast',
 			'check-type-operator',
+			'check-preblock',
 		],
 	},
 };
@@ -167,14 +277,6 @@ const jsRules = {
 			},
 			singleline: 'never',
 		},
-	},
-	'variable-name': {
-		options: [
-			'allow-leading-underscore',
-			'ban-keywords',
-			'check-format',
-			'allow-pascal-case',
-		],
 	},
 };
 const tsRules = {
@@ -262,16 +364,12 @@ const tsRules = {
 		],
 	},
 	'unified-signatures': true,
-	'variable-name': {
-		options: [
-			'allow-leading-underscore',
-			'ban-keywords',
-			'check-format',
-		],
-	},
 };
 
 module.exports = {
+	rulesDirectory: [
+		'node_modules/tslint-eslint-rules/dist/rules',
+	],
 	rules: Object.assign( {}, commonRules, tsRules ),
 	jsRules: Object.assign( {}, commonRules, jsRules ),
 	defaultSeverity: 'warning',

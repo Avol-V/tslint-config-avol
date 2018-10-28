@@ -1,9 +1,40 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
+## [Unreleased]
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/) 
-and this project adheres to [Semantic Versioning](http://semver.org/).
+### Added
+
+- `no-conditional-assignment` rule.
+- `switch-default` rule.
+- `no-switch-case-fall-through` rule.
+- `no-unused-expression` rule.
+- `no-constant-condition` rule from `tslint-eslint-rules`.
+- `no-empty-character-class` rule from `tslint-eslint-rules`.
+- `no-ex-assign` rule from `tslint-eslint-rules`.
+- `no-extra-boolean-cast` rule from `tslint-eslint-rules`.
+- `no-inner-declarations` rule from `tslint-eslint-rules`.
+- `ter-no-irregular-whitespace` rule from `tslint-eslint-rules`.
+- `no-multi-spaces` rule from `tslint-eslint-rules`.
+- `array-bracket-spacing` rule from `tslint-eslint-rules`.
+- `block-spacing` rule from `tslint-eslint-rules`.
+- `brace-style` rule from `tslint-eslint-rules`.
+- `ter-computed-property-spacing` rule from `tslint-eslint-rules`.
+- `ter-func-call-spacing` rule from `tslint-eslint-rules`.
+- `ter-indent` rule from `tslint-eslint-rules`.
+- `ter-max-len` rule from `tslint-eslint-rules`.
+- `ter-newline-after-var` rule from `tslint-eslint-rules`.
+- `object-curly-spacing` rule from `tslint-eslint-rules`.
+- `ter-padded-blocks` rule from `tslint-eslint-rules`.
+- `space-in-parens` rule from `tslint-eslint-rules`.
+
+### Changed
+
+- `tslint` updated to version 5.11.0.
+- `allow-pascal-case` in `variable-name` for ts and js.
+
+## Removed
+
+- `max-line-length` rule (used `ter-max-len` instead).
 
 ## [2.3.0] - 2018-05-09
 
