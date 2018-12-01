@@ -304,21 +304,7 @@ const tsRules = {
 	},
 	'member-ordering': {
 		options: {
-			order: [
-				'public-static-field',
-				'protected-static-field',
-				'private-static-field',
-				'public-instance-field',
-				'protected-instance-field',
-				'private-instance-field',
-				'public-static-method',
-				'protected-static-method',
-				'private-static-method',
-				'constructor',
-				'public-instance-method',
-				'protected-instance-method',
-				'private-instance-method',
-			],
+			order: 'fields-first',
 		},
 	},
 	'no-angle-bracket-type-assertion': true,

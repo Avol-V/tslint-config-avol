@@ -31,6 +31,7 @@
 
 - `tslint` updated to version 5.11.0.
 - `allow-pascal-case` in `variable-name` for ts and js.
+- `member-ordering` is now `fields-first`.
 
 ## Removed
 
