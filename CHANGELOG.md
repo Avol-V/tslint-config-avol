@@ -26,16 +26,27 @@
 - `object-curly-spacing` rule from `tslint-eslint-rules`.
 - `ter-padded-blocks` rule from `tslint-eslint-rules`.
 - `space-in-parens` rule from `tslint-eslint-rules`.
+- `early-exit` rule from `tslint-consistent-codestyle`.
+- `naming-convention` rule from `tslint-consistent-codestyle`.
+- `no-accessor-recursion` rule from `tslint-consistent-codestyle`.
+- `no-collapsible-if` rule from `tslint-consistent-codestyle`.
+- `no-return-undefined` rule from `tslint-consistent-codestyle`.
+- `no-static-this` rule from `tslint-consistent-codestyle`.
+- `no-unnecessary-else` rule from `tslint-consistent-codestyle`.
+- `no-var-before-return` rule from `tslint-consistent-codestyle`.
+- `object-shorthand-properties-first` rule from `tslint-consistent-codestyle`.
 
 ### Changed
 
 - `tslint` updated to version 5.11.0.
 - `allow-pascal-case` in `variable-name` for ts and js.
 - `member-ordering` is now `fields-first`.
+- `variable-name` rule is now used only for ban keywords.
 
 ## Removed
 
 - `max-line-length` rule (used `ter-max-len` instead).
+- `class-name` rule (used `naming-convention` instead).
 
 ## [2.3.0] - 2018-05-09
 

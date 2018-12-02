@@ -18,12 +18,17 @@ const commonRules = {
 	'brace-style': {
 		options: ['allman'],
 	},
-	'class-name': true,
 	'comment-format': {
 		options: ['check-space'],
 	},
 	'curly': {
 		options: ['ignore-same-line'],
+	},
+	'early-exit': {
+		options: {
+			'max-length': 4,
+			'ignore-constructor': true,
+		},
 	},
 	'eofline': true,
 	'forin': true,
@@ -50,6 +55,8 @@ const commonRules = {
 	'new-parens': true,
 	'newline-before-return': true,
 	'no-arg': true,
+	'no-accessor-recursion': true,
+	'no-collapsible-if': true,
 	'no-conditional-assignment': true,
 	'no-consecutive-blank-lines': true,
 	'no-console': {
@@ -88,6 +95,7 @@ const commonRules = {
 	'no-parameter-reassignment': true,
 	'no-reference': true,
 	'no-return-await': true,
+	'no-return-undefined': true,
 	'no-shadowed-variable': {
 		options: {
 			class: false,
@@ -96,6 +104,7 @@ const commonRules = {
 		},
 	},
 	'no-sparse-arrays': true,
+	'no-static-this': true,
 	'no-string-literal': true,
 	'no-string-throw': true,
 	'no-switch-case-fall-through': true,
@@ -108,6 +117,7 @@ const commonRules = {
 		],
 	},
 	'no-unnecessary-callback-wrapper': true,
+	'no-unnecessary-else': true,
 	'no-unnecessary-initializer': true,
 	'no-unsafe-finally': true,
 	'no-unused-expression': {
@@ -116,6 +126,9 @@ const commonRules = {
 			'allow-new',
 			'allow-tagged-template',
 		],
+	},
+	'no-var-before-return': {
+		options: ['allow-destructuring'],
 	},
 	'no-var-keyword': true,
 	'number-literal-format': true,
@@ -126,6 +139,7 @@ const commonRules = {
 		options: ['consistent-as-needed'],
 	},
 	'object-literal-shorthand': true,
+	'object-shorthand-properties-first': true,
 	'one-variable-per-declaration': {
 		options: ['ignore-for-loop'],
 	},
@@ -245,10 +259,7 @@ const commonRules = {
 	'use-isnan': true,
 	'variable-name': {
 		options: [
-			'allow-leading-underscore',
 			'ban-keywords',
-			'check-format',
-			'allow-pascal-case',
 		],
 	},
 	'whitespace': {
@@ -267,6 +278,75 @@ const commonRules = {
 	},
 };
 const jsRules = {
+	'naming-convention': {
+		options: [
+			{
+				type: 'default',
+				leadingUnderscore: 'forbid',
+				trailingUnderscore: 'forbid',
+				format: [
+					'strictCamelCase',
+				],
+			},
+			{
+				type: 'variable',
+				format: [
+					'strictCamelCase',
+					'StrictPascalCase',
+				],
+			},
+			{
+				type: 'variable',
+				modifiers: ['global', 'const'],
+				format: [
+					'strictCamelCase',
+					'StrictPascalCase',
+					'UPPER_CASE',
+				],
+			},
+			{
+				type: 'variable',
+				modifiers: ['export', 'const'],
+				format: [
+					'UPPER_CASE',
+				],
+			},
+			{
+				type: 'functionVariable',
+				modifiers: ['export', 'const'],
+				format: [
+					'strictCamelCase',
+					'StrictPascalCase',
+				],
+			},
+			{
+				type: 'parameter',
+				modifiers: ['unused'],
+				leadingUnderscore: 'allow',
+			},
+			{
+				type: 'member',
+				leadingUnderscore: 'allow',
+				format: [
+					'camelCase',
+				],
+			},
+			{
+				type: 'property',
+				modifiers: ['static'],
+				format: [
+					'camelCase',
+					'UPPER_CASE',
+				],
+			},
+			{
+				type: 'type',
+				format: [
+					'StrictPascalCase',
+				],
+			},
+		],
+	},
 	'no-duplicate-variable': true,
 	'trailing-comma': {
 		options: {
@@ -306,6 +386,96 @@ const tsRules = {
 		options: {
 			order: 'fields-first',
 		},
+	},
+	'naming-convention': {
+		options: [
+			{
+				type: 'default',
+				leadingUnderscore: 'forbid',
+				trailingUnderscore: 'forbid',
+				format: [
+					'strictCamelCase',
+				],
+			},
+			{
+				type: 'variable',
+				format: [
+					'strictCamelCase',
+					'StrictPascalCase',
+				],
+			},
+			{
+				type: 'variable',
+				modifiers: ['global', 'const'],
+				format: [
+					'strictCamelCase',
+					'StrictPascalCase',
+					'UPPER_CASE',
+				],
+			},
+			{
+				type: 'variable',
+				modifiers: ['export', 'const'],
+				format: [
+					'UPPER_CASE',
+				],
+			},
+			{
+				type: 'functionVariable',
+				modifiers: ['export', 'const'],
+				format: [
+					'strictCamelCase',
+					'StrictPascalCase',
+				],
+			},
+			{
+				type: 'parameter',
+				modifiers: ['unused'],
+				leadingUnderscore: 'allow',
+			},
+			{
+				type: 'member',
+				format: [
+					'camelCase',
+				],
+			},
+			{
+				type: 'member',
+				modifiers: ['protected'],
+				leadingUnderscore: 'require',
+			},
+			{
+				type: 'member',
+				modifiers: ['private'],
+				leadingUnderscore: 'require',
+			},
+			{
+				type: 'property',
+				modifiers: ['public', 'static', 'const'],
+				format: [
+					'UPPER_CASE',
+				],
+			},
+			{
+				type: 'type',
+				format: [
+					'StrictPascalCase',
+				],
+			},
+			{
+				type: 'class',
+				modifiers: ['abstract'],
+				prefix: 'Abstract',
+			},
+			{
+				type: 'interface',
+				prefix: ['I', ''],
+			},
+			{
+				type: 'genericTypeParameter',
+				prefix: 'T',
+			},
+		],
 	},
 	'no-angle-bracket-type-assertion': true,
 	'no-empty-interface': true,
@@ -355,6 +525,7 @@ const tsRules = {
 module.exports = {
 	rulesDirectory: [
 		'node_modules/tslint-eslint-rules/dist/rules',
+		'node_modules/tslint-consistent-codestyle/rules',
 	],
 	rules: Object.assign( {}, commonRules, tsRules ),
 	jsRules: Object.assign( {}, commonRules, jsRules ),
