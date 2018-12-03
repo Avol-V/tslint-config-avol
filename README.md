@@ -53,6 +53,7 @@ Example scripts for `package.json`:
 * [TSLint](https://palantir.github.io/tslint/rules/)
 * [ESLint rules for TSLint](https://github.com/buzinas/tslint-eslint-rules)
 * [TSLint consistent codestyle](https://github.com/ajafff/tslint-consistent-codestyle)
+* [TSLint Microsoft contrib](https://github.com/Microsoft/tslint-microsoft-contrib)
 
 ## Change Log
 

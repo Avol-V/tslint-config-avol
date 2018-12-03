@@ -35,6 +35,13 @@
 - `no-unnecessary-else` rule from `tslint-consistent-codestyle`.
 - `no-var-before-return` rule from `tslint-consistent-codestyle`.
 - `object-shorthand-properties-first` rule from `tslint-consistent-codestyle`.
+- `max-func-body-length` rule from `tslint-microsoft-contrib`.
+- `no-single-line-block-comment` rule from `tslint-microsoft-contrib`.
+- `no-typeof-undefined` rule from `tslint-microsoft-contrib`.
+- `no-unnecessary-override` rule from `tslint-microsoft-contrib`.
+- `use-simple-attributes` rule from `tslint-microsoft-contrib`.
+- `react-anchor-blank-noopener` rule from `tslint-microsoft-contrib`.
+- `react-this-binding-issue` rule from `tslint-microsoft-contrib`.
 
 ### Changed
 

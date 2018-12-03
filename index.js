@@ -376,6 +376,17 @@ const tsRules = {
 	},
 	'callable-types': true,
 	'interface-over-type-literal': true,
+	'max-func-body-length': {
+		options: {
+			'arrow-body-length': 30,
+			'ctor-body-length': 30,
+			'func-body-length': 120,
+			'func-express-body-length': 40,
+			'method-body-length': 60,
+			'ignore-comments': true,
+			'ignore-parameters-to-function-regex': '^describe$',
+		},
+	},
 	'member-access': {
 		options: [
 			'check-accessor',
@@ -485,8 +496,20 @@ const tsRules = {
 	'no-non-null-assertion': true,
 	'no-parameter-properties': true,
 	'no-reference-import': true,
+	'no-single-line-block-comment': true,
+	'no-typeof-undefined': true,
+	'no-unnecessary-override': true,
 	'no-var-requires': true,
 	'prefer-method-signature': true,
+	'react-anchor-blank-noopener': {
+		options: ['force-rel-redundancy'],
+	},
+	'react-this-binding-issue': {
+		options: {
+			'allow-anonymous-listeners': true,
+			'bind-decorators': ['autobind'],
+		},
+	},
 	'trailing-comma': {
 		options: {
 			multiline: 'always',
@@ -520,12 +543,14 @@ const tsRules = {
 		],
 	},
 	'unified-signatures': true,
+	'use-simple-attributes': true,
 };
 
 module.exports = {
 	rulesDirectory: [
 		'node_modules/tslint-eslint-rules/dist/rules',
 		'node_modules/tslint-consistent-codestyle/rules',
+		'node_modules/tslint-microsoft-contrib',
 	],
 	rules: Object.assign( {}, commonRules, tsRules ),
 	jsRules: Object.assign( {}, commonRules, jsRules ),
