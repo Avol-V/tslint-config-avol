@@ -34,6 +34,7 @@
   "dependencies": {
     "tslint-consistent-codestyle": "^1.14.1",
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-microsoft-contrib": "^6.0.0"
+    "tslint-microsoft-contrib": "^6.0.0",
+    "tslint-react": "^3.6.0"
   }
 }

@@ -42,6 +42,15 @@
 - `use-simple-attributes` rule from `tslint-microsoft-contrib`.
 - `react-anchor-blank-noopener` rule from `tslint-microsoft-contrib`.
 - `react-this-binding-issue` rule from `tslint-microsoft-contrib`.
+- `jsx-alignment` rule from `tslint-react`.
+- `jsx-boolean-value` rule from `tslint-react`.
+- `jsx-curly-spacing` rule from `tslint-react`.
+- `jsx-equals-spacing` rule from `tslint-react`.
+- `jsx-key` rule from `tslint-react`.
+- `jsx-no-string-ref` rule from `tslint-react`.
+- `jsx-self-close` rule from `tslint-react`.
+- `jsx-space-before-trailing-slash` rule from `tslint-react`.
+- `jsx-wrap-multiline` rule from `tslint-react`.
 
 ### Changed
 

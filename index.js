@@ -39,6 +39,21 @@ const commonRules = {
 	'jsdoc-format': {
 		options: ['check-multiline-start'],
 	},
+	'jsx-alignment': true,
+	'jsx-boolean-value': {
+		options: ['always'],
+	},
+	'jsx-curly-spacing': {
+		options: ['never'],
+	},
+	'jsx-equals-spacing': {
+		options: ['never'],
+	},
+	'jsx-key': true,
+	'jsx-no-string-ref': true,
+	'jsx-self-close': true,
+	'jsx-space-before-trailing-slash': true,
+	'jsx-wrap-multiline': true,
 	'label-position': true,
 	'linebreak-style': {
 		options: ['LF'],
@@ -551,6 +566,7 @@ module.exports = {
 		'node_modules/tslint-eslint-rules/dist/rules',
 		'node_modules/tslint-consistent-codestyle/rules',
 		'node_modules/tslint-microsoft-contrib',
+		'node_modules/tslint-react/rules',
 	],
 	rules: Object.assign( {}, commonRules, tsRules ),
 	jsRules: Object.assign( {}, commonRules, jsRules ),
