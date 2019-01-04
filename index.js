@@ -18,6 +18,7 @@ const commonRules = {
 	'brace-style': {
 		options: ['allman'],
 	},
+	'class-method-newlines': true,
 	'comment-format': {
 		options: ['check-space'],
 	},
@@ -50,6 +51,7 @@ const commonRules = {
 		options: ['never'],
 	},
 	'jsx-key': true,
+	'jsx-no-braces-for-string-attributes': true,
 	'jsx-no-string-ref': true,
 	'jsx-self-close': true,
 	'jsx-space-before-trailing-slash': true,
@@ -178,6 +180,7 @@ const commonRules = {
 			'allow-protected',
 		],
 	},
+	'prefer-or-operator-over-ternary': true,
 	'prefer-switch': {
 		options: {
 			'min-cases': 3,
@@ -195,6 +198,23 @@ const commonRules = {
 		],
 	},
 	'radix': true,
+	'react-lifecycle-order': {
+		options: [
+			'componentWillMount', // deprecated
+			'UNSAFE_componentWillMount', // deprecated
+			'componentDidMount',
+			'componentWillReceiveProps', // deprecated
+			'UNSAFE_componentWillReceiveProps', // deprecated
+			'shouldComponentUpdate',
+			'componentWillUpdate', // deprecated
+			'UNSAFE_componentWillUpdate', // deprecated
+			'getSnapshotBeforeUpdate',
+			'componentDidUpdate',
+			'componentWillUnmount',
+			'componentDidCatch',
+			'render',
+		],
+	},
 	'semicolon': {
 		options: ['always'],
 	},
@@ -567,6 +587,7 @@ module.exports = {
 		'node_modules/tslint-consistent-codestyle/rules',
 		'node_modules/tslint-microsoft-contrib',
 		'node_modules/tslint-react/rules',
+		'node_modules/tslint-misc-rules/rules',
 	],
 	rules: Object.assign( {}, commonRules, tsRules ),
 	jsRules: Object.assign( {}, commonRules, jsRules ),

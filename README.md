@@ -55,6 +55,7 @@ Example scripts for `package.json`:
 * [TSLint consistent codestyle](https://github.com/ajafff/tslint-consistent-codestyle)
 * [TSLint Microsoft contrib](https://github.com/Microsoft/tslint-microsoft-contrib)
 * [TSLint React](https://github.com/palantir/tslint-react)
+* [TSLint Misc Rules](https://github.com/jwbay/tslint-misc-rules)
 
 ## Change Log
 

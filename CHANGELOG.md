@@ -51,6 +51,10 @@
 - `jsx-self-close` rule from `tslint-react`.
 - `jsx-space-before-trailing-slash` rule from `tslint-react`.
 - `jsx-wrap-multiline` rule from `tslint-react`.
+- `class-method-newlines` rule from `tslint-misc-rules`.
+- `jsx-no-braces-for-string-attributes` rule from `tslint-misc-rules`.
+- `react-lifecycle-order` rule from `tslint-misc-rules`.
+- `prefer-or-operator-over-ternary` rule from `tslint-misc-rules`.
 
 ### Changed
 
