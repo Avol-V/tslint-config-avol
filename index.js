@@ -1,3 +1,5 @@
+const Path = require( 'path' );
+
 const commonRules = {
 	'array-bracket-spacing': {
 		options: [
@@ -588,13 +590,21 @@ const tsRules = {
 	'use-simple-attributes': true,
 };
 
+function getModuleDirectory( module, additionalPath = '' )
+{
+	return Path.join(
+		Path.dirname( require.resolve( module ) ),
+		additionalPath
+	);
+}
+
 module.exports = {
 	rulesDirectory: [
-		'node_modules/tslint-eslint-rules/dist/rules',
-		'node_modules/tslint-consistent-codestyle/rules',
-		'node_modules/tslint-microsoft-contrib',
-		'node_modules/tslint-react/rules',
-		'node_modules/tslint-misc-rules/rules',
+		getModuleDirectory( 'tslint-eslint-rules', 'dist/rules' ),
+		getModuleDirectory( 'tslint-consistent-codestyle' ),
+		getModuleDirectory( 'tslint-microsoft-contrib' ),
+		getModuleDirectory( 'tslint-react', 'rules' ),
+		getModuleDirectory( 'tslint-misc-rules' ),
 	],
 	rules: Object.assign( {}, commonRules, tsRules ),
 	jsRules: Object.assign( {}, commonRules, jsRules ),
