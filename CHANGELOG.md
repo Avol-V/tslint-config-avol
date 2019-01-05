@@ -30,7 +30,6 @@
 - `object-curly-spacing` rule from `tslint-eslint-rules`.
 - `ter-padded-blocks` rule from `tslint-eslint-rules`.
 - `space-in-parens` rule from `tslint-eslint-rules`.
-- `early-exit` rule from `tslint-consistent-codestyle`.
 - `naming-convention` rule from `tslint-consistent-codestyle`.
 - `no-accessor-recursion` rule from `tslint-consistent-codestyle`.
 - `no-collapsible-if` rule from `tslint-consistent-codestyle`.

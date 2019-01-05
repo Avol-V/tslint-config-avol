@@ -27,12 +27,6 @@ const commonRules = {
 	'curly': {
 		options: ['ignore-same-line'],
 	},
-	'early-exit': {
-		options: {
-			'max-length': 4,
-			'ignore-constructor': true,
-		},
-	},
 	'eofline': true,
 	'forin': true,
 	'function-constructor': true,
