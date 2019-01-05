@@ -33,6 +33,7 @@ const commonRules = {
 	},
 	'eofline': true,
 	'forin': true,
+	'function-constructor': true,
 	'import-spacing': true,
 	'indent': {
 		options: ['tabs'],
@@ -292,6 +293,7 @@ const commonRules = {
 		options: ['allow-null-check'],
 	},
 	'use-isnan': true,
+	'unnecessary-constructor': true,
 	'variable-name': {
 		options: [
 			'ban-keywords',
@@ -550,6 +552,11 @@ const tsRules = {
 			multiline: 'always',
 			singleline: 'never',
 			esSpecCompliant: true,
+		},
+	},
+	'type-literal-delimiter': {
+		options: {
+			singleLine: 'never',
 		},
 	},
 	'typedef': {

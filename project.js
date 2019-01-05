@@ -15,6 +15,7 @@ const tsRules = {
 	'no-for-in-array': true,
 	'no-unnecessary-type-assertion': true,
 	'prefer-readonly': true,
+	'unnecessary-bind': true,
 };
 
 module.exports = {

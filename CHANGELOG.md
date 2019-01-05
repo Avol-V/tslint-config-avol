@@ -8,6 +8,10 @@
 - `switch-default` rule.
 - `no-switch-case-fall-through` rule.
 - `no-unused-expression` rule.
+- `type-literal-delimiter` rule.
+- `function-constructor` rule.
+- `unnecessary-constructor` rule.
+- `unnecessary-bind` rule.
 - `no-constant-condition` rule from `tslint-eslint-rules`.
 - `no-empty-character-class` rule from `tslint-eslint-rules`.
 - `no-ex-assign` rule from `tslint-eslint-rules`.
