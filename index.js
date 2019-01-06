@@ -411,11 +411,11 @@ const tsRules = {
 	'interface-over-type-literal': true,
 	'max-func-body-length': {
 		options: {
-			'arrow-body-length': 30,
-			'ctor-body-length': 30,
-			'func-body-length': 120,
-			'func-express-body-length': 40,
-			'method-body-length': 60,
+			'arrow-body-length': 100,
+			'ctor-body-length': 50,
+			'func-body-length': 200,
+			'func-express-body-length': 100,
+			'method-body-length': 150,
 			'ignore-comments': true,
 			'ignore-parameters-to-function-regex': '^describe$',
 		},
